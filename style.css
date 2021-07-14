@@ -1,0 +1,500 @@
+/*---------- font style  ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*---------- Common styel  ----------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Header section style  */
+header {
+    background: #2D25A0;
+    min-height: 677px;
+}
+header .container {
+    padding : 42px 0 0 156px;
+}
+header .navigation {
+    width: 85%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header .batton {
+    background: #E02C6D;
+    width: 123px;
+    padding: 10px 24px;
+    text-align: center;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+header li {
+    list-style: none;
+    margin-right: 36px;
+}
+.showcase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 67px;
+    justify-content: space-between;
+}
+.display-text h1{
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+.display-text a {
+	background: #E02C6D;
+	color: #ffffff;
+	padding: 10px 15px;
+	display: inline-block;
+}
+.display-text a:hover {
+    background: #fd025e;
+    font-weight: bold;
+    transition: all 1s;
+}
+.display-image img {
+    width: 556.01px;
+    height: 438px;
+    margin-right: 140.99px;
+}
+
+/*---------- Players section style ----------*/
+
+#players {
+    margin: 70px 0 0 130px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+}
+article {
+    width: auto;
+    padding: 15px;
+    margin: 0 0 27px 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+article img {
+    width: 100%;
+    min-height: 256px;
+}
+article h3 {
+    margin-top: 16px;
+    font-size: 28px;
+}
+article p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+    margin-top: 10px;
+}
+
+/*---------- Copa America section style  ----------*/
+
+#copa-america {
+    margin: 138px 0 158px 156px;
+}
+#copa-america .display-text {
+    width: 50%;
+}
+#copa-america h1 {
+    color: black;
+    width: 469px;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+#copa-america p {
+    width: 404px;
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 24px;
+}
+#copa-america .display-image {
+    width: 50%;
+}
+#copa-america img {
+    width: 80%;
+    height: auto;
+}
+
+/*---------- timetable section styel  ----------*/
+
+#timeTables {
+    margin: 0px 140px 60px 175px;
+}
+#timeTables .heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: crimson;
+    text-transform: uppercase;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+} 
+tr {
+    border: 1px solid #dddddd;
+}
+td {
+    text-align: center;
+    padding: 8px;
+} 
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*---------- partner section style  ----------*/
+
+#partners {
+    margin: 0px 140px 60px 175px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    color: crimson;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title hr {
+    border: 1px solid #D1D1D1;
+    width: 220px;
+    align-items: center;
+    height: 0;
+    margin: 18px;
+}
+.partner {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center
+}
+.partner img {
+    padding-left: 30%;
+}
+
+/*---------- footer section style  ----------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 158px;
+}
+footer img {
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+footer .icons {
+    width: 170px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer a {
+    border-radius: 100%;
+    background: #c3c6cf;
+    color: #969BAB;
+    padding: 5px 10px 10px 10px;
+}
+footer a:hover {
+    color: #fd025e;
+    transition: all 1s;
+}
+footer p {
+    font-size: 18px;
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+/*---------- Media Queries Style ----------*/
+
+/*---------- Media Queries for Mobile  ----------*/
+
+@media screen and (max-width: 767px) {
+    /*---------- header section mobile midea quaries  ----------*/
+    header .container {
+        padding : 42px 0 0 16px;
+        width: 90%;
+    }
+    header .navigation {
+        display: none;
+    }
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 67px;
+        width: 100%;
+    }
+    .display-text h1{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    .display-image{
+        width: 95%;
+    }
+    .display-image img {
+        width: 90%;
+        height: auto;
+        margin: 60px 16px 15px 0;
+    }
+    /*---------- Players section mobile midea quaries ----------*/
+    #players {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        padding-top: 47px;
+    }
+    article {
+        width: 80%;
+        padding: 15px;
+        margin: 0 15px 27px 15px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+    /*---------- Copa America section mobile midea quaries  ----------*/
+    #copa-america {
+        margin: 138px 0 158px 15px;
+    }
+    #copa-america h1 {
+        color: black;
+        width: 300px;
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+    #copa-america p {
+        width: 250px;
+        font-size: 12px;
+        color: #6C6C6C;
+        margin-bottom: 24px;
+    }
+    #copa-america .display-image {
+        width: 100%;
+    }
+    #copa-america .display-image img {
+        width: 80%;
+        height: auto;
+    }
+    /*---------- timetable section mobile midea quaries  ----------*/
+    #timeTables {
+        margin: 0px 15px 60px 15px;
+        width: 90%;
+    }
+    #timeTables .heading {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: crimson;
+        text-transform: uppercase;
+    }
+    table {
+        border-collapse: collapse;
+        padding: 15px;
+    } 
+    #timeTables .container {
+        margin-right: 15px;
+    }
+    tr {
+        border: 1px solid #dddddd;
+    }
+    td {
+        text-align: center;
+        padding: 8px;
+    } 
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    /* partner section mobile midea quaries  */
+    #partners {
+        margin: 0px 15px 60px 15px;
+    }
+    .title {
+        display: inline-block;
+        margin-bottom: 0px;
+        color: crimson;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .title hr {
+        display: none;
+    }
+    .partner {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+    }
+    .partner img {
+        padding: 80px 80px 0 80px;
+    }
+
+    /*---------- footer section mobile midea quaries  ----------*/
+
+    footer img {
+        width: 240px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+}
+
+/*---------- Media Queries for Tablet  ----------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*---------- header section tablet midea quaries  ----------*/
+
+    header {
+        background: #2D25A0;
+        min-height: 629px;
+    }
+    header .container {
+        padding : 42px 0 0 20px;
+        width: 96%;
+    }
+    header .navigation {
+        display: none;
+    }
+    .showcase {
+        display: flex;
+        flex-direction: row;
+        margin-top: 67px;
+        width: 95%;
+    }
+    .display-text h1{
+        font-size: 36px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+    header .display-text {
+        width: 50%;
+    }
+    header .display-image {
+        width: 50%;
+    }
+    .display-image img {
+        width: 100%;
+        height: auto;
+        margin: 60px 16px 15px 0;
+    }
+
+    /*---------- Players section tablet midea quaries ----------*/
+
+    #players {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        padding-top: 47px;
+    }
+    article {
+        width: 80%;
+        padding: 15px;
+        margin: 0 15px 27px 15px;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /*---------- Copa America section tablet midea quaries  ----------*/
+
+    #copa-america {
+        margin: 138px 0 158px 20px;
+    }
+    #copa-america h1 {
+        color: black;
+        width: 300px;
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+    #copa-america p {
+        width: 250px;
+        font-size: 12px;
+        color: #6C6C6C;
+        margin-bottom: 24px;
+    }
+    #copa-america .display-image img {
+        width: 95%;
+        height: auto;
+    }
+
+    /*---------- timetable section tablet midea quaries  ----------*/
+
+    #timeTables {
+        margin: 0px 15px 60px 20px;
+        width: 96%;
+    }
+    #timeTables .heading {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 40px;
+        color: crimson;
+        text-transform: uppercase;
+    }
+    table {
+        border-collapse: collapse;
+        padding: 15px;
+    } 
+    #timeTables .container {
+        margin-right: 15px;
+    }
+    tr {
+        border: 1px solid #dddddd;
+    }
+    td {
+        text-align: center;
+        padding: 8px;
+    } 
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    /*---------- partner section tablet midea quaries  ----------*/
+
+    #partners {
+        margin: 0px 15px 60px 20px;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+        color: crimson;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .partner {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 92%;
+    }
+    .partner img {
+        padding: 30px;
+        margin-left: 35%;
+    }
+    
+    /*---------- footer section tablet midea quaries  ----------*/
+    footer img {
+        width: 240px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+}
